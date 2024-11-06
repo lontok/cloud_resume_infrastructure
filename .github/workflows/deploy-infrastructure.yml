@@ -20,7 +20,7 @@ jobs:
         - name: Checkout repository
           uses: actions/checkout@v4
 
-        - name: Set up Terraform
+        - name: Set Up Terraform
           uses: hashicorp/setup-terraform@v1
           with:
             terraform_version: 1.9.8
@@ -28,11 +28,11 @@ jobs:
         - name: Terraform Init
           working-directory: ./terraform
           run: terraform init
-        
+          
         - name: Terraform Validate
           working-directory: ./terraform
           run: terraform validate
-
+        
         - name: Terraform Plan
           working-directory: ./terraform
           run: terraform plan
@@ -40,4 +40,3 @@ jobs:
         - name: Terraform Apply
           working-directory: ./terraform
           run: terraform apply -auto-approve
-

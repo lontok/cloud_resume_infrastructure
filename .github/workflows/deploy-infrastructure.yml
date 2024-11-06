@@ -1,3 +1,4 @@
+# This file contains the configuration for the GitHub Actions workflow that will deploy the infrastructure using Terraform
 name: Deploy Infrastructure with Terraform
 
 # Define when the workflow should be triggered
